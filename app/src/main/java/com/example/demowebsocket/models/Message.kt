@@ -1,6 +1,7 @@
 package com.example.demowebsocket.models
 
-data class PublishTopic<T>(
+data class Message<T>(
     val topic: String,
-    val message: T?
+    val action: String,
+    val data: T
 )
